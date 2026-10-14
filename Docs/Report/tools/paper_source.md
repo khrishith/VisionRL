@@ -173,7 +173,7 @@ H: Item | Specification
 R: Computer | MacBook Air, Apple M3 (ARM64), macOS
 R: Game engine | Unity 6.6 (6000.6.5f1), Universal Render Pipeline 17.6.0
 R: Unity ML-Agents package | 4.0.0 (embedded, with the compatibility change above)
-R: Inference in Unity | Unity Inference Engine package 2.2.1, Burst CPU backend
+R: Inference in Unity | Unity Inference Engine package 2.6.1 (ML-Agents requires at least 2.2.1), Burst CPU backend
 R: Python trainer | Python 3.10.12; mlagents and mlagents\_envs 1.2.0.dev0 (built from the ML-Agents release\_23 sources)
 R: Deep-learning library | PyTorch 2.2.2 (CPU)
 R: Evaluation tools | ONNX Runtime 1.19.2; NumPy 1.23.5; gRPC 1.51.1

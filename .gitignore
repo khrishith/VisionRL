@@ -16,3 +16,5 @@ Backups/
 Memory/
 *.npz
 Reports/*-player-logs/
+Reports/**/*-player-logs/
+Reports/stage1-playmode-*-attempt.txt

@@ -201,7 +201,7 @@ Table IV lists the software and hardware used. The ML-Agents Unity package 4.0.0
 | Computer | MacBook Air, Apple M3 (ARM64), macOS |
 | Game engine | Unity 6.6 (6000.6.5f1), Universal Render Pipeline 17.6.0 |
 | Unity ML-Agents package | 4.0.0 (embedded, with the compatibility change above) |
-| Inference in Unity | Unity Inference Engine package 2.2.1, Burst CPU backend |
+| Inference in Unity | Unity Inference Engine package 2.6.1 (ML-Agents requires at least 2.2.1), Burst CPU backend |
 | Python trainer | Python 3.10.12; mlagents and mlagents_envs 1.2.0.dev0 (built from the ML-Agents release_23 sources) |
 | Deep-learning library | PyTorch 2.2.2 (CPU) |
 | Evaluation tools | ONNX Runtime 1.19.2; NumPy 1.23.5; gRPC 1.51.1 |
