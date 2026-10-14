@@ -1,0 +1,33 @@
+PASS agent and target exist in Play mode
+PASS 49 visible floor cells
+PASS agent and target are cubes
+PASS no trainer connection
+PASS manual mode stays idle without key presses
+PASS ten idle simulation steps produce no movement or penalty
+PASS movement action 0
+PASS transform follows action 0
+PASS step penalty and distance reward action 0
+PASS movement action 1
+PASS transform follows action 1
+PASS step penalty and distance reward action 1
+PASS movement action 2
+PASS transform follows action 2
+PASS step penalty and distance reward action 2
+PASS movement action 3
+PASS transform follows action 3
+PASS step penalty and distance reward action 3
+PASS boundary blocks movement and consumes one step
+PASS boundary penalty plus step and distance shaping
+PASS target reach terminates episode
+PASS target reached reward
+PASS target reach resets to non-overlapping cells
+PASS episode continues through action 63
+PASS action 64 times out and resets
+PASS timeout reward includes terminal potential correction
+PASS 100 valid non-overlapping randomized resets with varied starts
+PASS robot visual is a child of the agent root
+PASS only the agent root has a collider (robot parts have none)
+PASS original cube mesh hidden but still present
+PASS robot lens faces +Z, the Forward direction
+PASS no extra scripts on robot (agent, requester, behavior, sensor only)
+PASS 84x84 RGB camera frame contains blue agent (25px) and green target (64px)

@@ -1,0 +1,34 @@
+PASS layout: 12 obstacles, 27 candidate exits (all non-obstacle border cells)
+PASS exit candidates lie on all four sides of the room
+PASS 6 of 27 exits are held out for generalisation tests (21 train)
+PASS every exit reaches every free cell, and RoomWorld path distances equal an independent BFS
+PASS exit set 0: 4000 resets use all 27 exits, starts always valid, never the exit, >= 6 steps away (min 6)
+PASS exit set 0: exits appear on all four sides
+PASS exit set 1: 4000 resets use all 21 exits, starts always valid, never the exit, >= 6 steps away (min 6)
+PASS exit set 1: exits appear on all four sides
+PASS exit set 2: 4000 resets use all 6 exits, starts always valid, never the exit, >= 6 steps away (min 6)
+PASS all (exit, cell, action) combinations: moves, bumps and rewards match the formula (5508 steps)
+PASS REWARD AUDIT: every step that does not get closer (bump, same distance, farther) is negative in every exit/cell/action (max -0.0230)
+PASS REWARD AUDIT: only getting closer pays a positive step reward (min 0.0405); everything else costs
+PASS reaching the exit always pays >= 1.040
+PASS REWARD AUDIT: back-and-forth loops are net negative for every exit and cell (best -0.0065)
+PASS episodes end by the 48th action
+PASS FIXED-DIRECTION POLICIES FAIL: always-forward/back/left/right win 22/3440 (0.6%) of valid (exit, start) pairs
+PASS blind policy 'uniform random' wins only 7.5% of 4000 randomized episodes (< 25%)
+PASS blind policy 'Stage 7 fixed probabilities' wins only 15.1% of 4000 randomized episodes (< 25%)
+PASS blind policy 'forward/right 50/50' wins only 10.9% of 4000 randomized episodes (< 25%)
+PASS EscapeRoomRandomExit.unity is open
+PASS floor: 64 tiles + slab
+PASS solid wall present: Wall_South
+PASS solid wall present: Wall_North
+PASS solid wall present: Wall_West
+PASS solid wall present: Wall_East
+PASS no fixed exit gap in the walls
+PASS 12 obstacles
+PASS RoomAgent: random exit on, pad/door linked, 48-step limit, start >= 6 from exit
+PASS behavior VisionRL, Default, no model attached (training scene)
+PASS no vector observations
+PASS one discrete branch of 4 actions
+PASS single 84x84 RGB camera sensor (no ray sensors)
+PASS only the agent root has a collider
+PASS no GridAgent in the scene

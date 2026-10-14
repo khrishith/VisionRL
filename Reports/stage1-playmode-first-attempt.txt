@@ -1,0 +1,28 @@
+PASS agent and target exist in Play mode
+PASS 49 visible floor cells
+PASS agent and target are cubes
+PASS no trainer connection
+PASS manual mode stays idle without key presses
+PASS movement action 0
+PASS transform follows action 0
+PASS step penalty and distance reward action 0
+PASS movement action 1
+PASS transform follows action 1
+PASS step penalty and distance reward action 1
+PASS movement action 2
+PASS transform follows action 2
+PASS step penalty and distance reward action 2
+PASS movement action 3
+PASS transform follows action 3
+PASS step penalty and distance reward action 3
+PASS boundary blocks movement and consumes one step
+PASS boundary penalty plus step and distance shaping
+PASS target reach terminates episode
+PASS target reached reward
+PASS target reach resets to non-overlapping cells
+PASS episode continues through action 63
+FAIL action 64 times out and resets
+FAIL exception: System.Exception: action 64 times out and resets
+  at VisionRL.Editor.StageOnePlayModeChecks.Check (System.Boolean value, System.String name) [0x00029] in /Users/mallareddykadthala/Desktop/Unity/VisionRL/Assets/VisionRL/Editor/StageOnePlayModeChecks.cs:46 
+  at VisionRL.Editor.StageOnePlayModeChecks.Test () [0x003a0] in /Users/mallareddykadthala/Desktop/Unity/VisionRL/Assets/VisionRL/Editor/StageOnePlayModeChecks.cs:103 
+  at VisionRL.Editor.StageOnePlayModeChecks.Tick () [0x00064] in /Users/mallareddykadthala/Desktop/Unity/VisionRL/Assets/VisionRL/Editor/StageOnePlayModeChecks.cs:55 

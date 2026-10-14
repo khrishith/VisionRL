@@ -1,0 +1,12 @@
+=== session A: model=VisionRL_random_exit_02 deterministic=False device=Burst activePolicy=SentisPolicy behavior=VisionRL/Default ===
+communicatorOn=False sensors=1 camera=84x84 rgb=True vectorObsSize=0 randomizeExit=True horizon=48
+[final model | all exits | camera] episodes=200 success=196 -> 98.0 % (95% CI 95.0 %-99.2 %) | timeouts=4 (2.0 %) | mean length=9.5 | mean steps to success=8.7 | mean return=1.306
+[final model | all exits | camera]   by exit side N/S/W/E: 55/55  65/65  27/31  49/49 | training exits 165/165 | held-out exits 31/35
+[final model | all exits | camera]   actions fwd/back/left/right = 27 %/29 %/20 %/24 %
+[final model | HELD-OUT exits | camera] episodes=100 success=88 -> 88.0 % (95% CI 80.2 %-93.0 %) | timeouts=12 (12.0 %) | mean length=14.2 | mean steps to success=9.6 | mean return=1.066
+[final model | HELD-OUT exits | camera]   by exit side N/S/W/E: 0/0  67/67  3/15  18/18 | training exits 0/0 | held-out exits 88/100
+[final model | HELD-OUT exits | camera]   actions fwd/back/left/right = 20 %/44 %/15 %/21 %
+[final model | all exits | BLANK camera] episodes=200 success=24 -> 12.0 % (95% CI 8.2 %-17.2 %) | timeouts=176 (88.0 %) | mean length=46.3 | mean steps to success=33.8 | mean return=-0.909
+[final model | all exits | BLANK camera]   by exit side N/S/W/E: 8/55  5/65  1/31  10/49 | training exits 22/165 | held-out exits 2/35
+[final model | all exits | BLANK camera]   actions fwd/back/left/right = 28 %/22 %/21 %/29 %
+unity errors/exceptions logged in session A: 0

@@ -1,0 +1,8 @@
+# Official release_23 source at the tested commit (reports 1.2.0.dev0).
+mlagents-envs @ git+https://github.com/Unity-Technologies/ml-agents.git@a2777719560e4676be99e2ea128c5eb1fbeb3dbb#subdirectory=ml-agents-envs
+mlagents @ git+https://github.com/Unity-Technologies/ml-agents.git@a2777719560e4676be99e2ea128c5eb1fbeb3dbb#subdirectory=ml-agents
+torch==2.2.2
+onnxruntime==1.19.2
+setuptools<81
+# Install grpcio=1.51.1 from conda-forge before pip (the pip ARM64 wheel failed).
+grpcio==1.51.1

@@ -1,0 +1,17 @@
+--- phase 1: Unity Play Mode, SAMPLED inference ---
+behavior=VisionRL requestedType=Default activePolicy=SentisPolicy heuristicMode=False device=Burst deterministic=False model=VisionRL_escape_train_01
+communicatorOn=False sensors=1 cameraSensor=84x84 grayscale=False vectorObsSize=0
+[sampled] episodes=200 successes=200 (100.0 %, 95% CI 98.1 %-100.0 %) timeouts=0 (0.0 %) mean length=16.7 mean steps to success=16.7
+[sampled] actions chosen [fwd,back,left,right] = 1619,66,386,1266 = 49 %/2 %/12 %/38 %
+blank-camera control: frame luminance range 0.032..0.032 (constant = nothing visible)
+[sampled, camera blanked] episodes=200 successes=194 (97.0 %, 95% CI 93.6 %-98.6 %) timeouts=6 (3.0 %) mean length=41.5 mean steps to success=38.9
+[sampled, camera blanked] actions chosen [fwd,back,left,right] = 2705,1330,1738,2534 = 33 %/16 %/21 %/31 %
+[sampled, camera blanked] failed start cells (6): (4,1) (0,0) (6,3) (1,7) (0,2) (1,5)
+unity errors/exceptions logged during phase 1: 0
+--- phase 2: Unity Play Mode, DETERMINISTIC inference ---
+behavior=VisionRL requestedType=Default activePolicy=SentisPolicy heuristicMode=False device=Burst deterministic=True model=VisionRL_escape_train_01
+communicatorOn=False sensors=1 cameraSensor=84x84 grayscale=False vectorObsSize=0
+[deterministic] episodes=50 successes=5 (10.0 %, 95% CI 4.3 %-21.4 %) timeouts=45 (90.0 %) mean length=115.4 mean steps to success=2.2
+[deterministic] actions chosen [fwd,back,left,right] = 5771,0,0,0 = 100 %/0 %/0 %/0 %
+[deterministic] failed start cells (45): (4,3) (3,0) (4,1) (0,7) (0,3) (7,1) (2,1) (5,0) (7,0) (7,7) (6,0) (3,5) (4,7) (2,5) (0,5) (0,0) (4,0) (2,3) (2,0) (1,6)
+unity errors/exceptions logged during phase 2: 0

@@ -1,0 +1,501 @@
+phase,exit_x,exit_z,start_x,start_z,held_out_exit,success,length,return
+final model | all exits | camera,0,2,7,3,0,1,12,1.409
+final model | all exits | camera,2,0,6,7,0,1,11,1.467
+final model | all exits | camera,0,0,5,4,0,1,9,1.378
+final model | all exits | camera,7,4,0,3,1,1,12,1.411
+final model | all exits | camera,4,7,2,3,0,1,6,1.247
+final model | all exits | camera,5,7,4,1,0,1,7,1.290
+final model | all exits | camera,2,7,2,2,0,1,7,1.290
+final model | all exits | camera,3,0,3,5,1,1,7,1.290
+final model | all exits | camera,4,0,4,7,0,1,7,1.290
+final model | all exits | camera,2,0,5,5,0,1,8,1.334
+final model | all exits | camera,7,2,0,3,0,1,12,1.408
+final model | all exits | camera,0,6,5,0,0,1,11,1.467
+final model | all exits | camera,7,3,3,7,0,1,8,1.334
+final model | all exits | camera,6,7,5,0,0,1,10,1.422
+final model | all exits | camera,7,0,0,5,1,1,12,1.513
+final model | all exits | camera,0,5,4,2,0,1,7,1.290
+final model | all exits | camera,7,3,2,5,0,1,7,1.290
+final model | all exits | camera,5,7,6,2,0,1,6,1.247
+final model | all exits | camera,0,0,5,5,0,1,10,1.422
+final model | all exits | camera,7,2,3,7,0,1,9,1.378
+final model | all exits | camera,4,7,2,3,0,1,6,1.247
+final model | all exits | camera,0,0,7,3,0,1,10,1.422
+final model | all exits | camera,5,0,2,5,1,1,8,1.334
+final model | all exits | camera,6,7,2,3,0,1,8,1.334
+final model | all exits | camera,4,0,7,4,0,1,7,1.290
+final model | all exits | camera,0,3,5,3,1,0,48,-1.061
+final model | all exits | camera,0,5,3,0,0,1,8,1.334
+final model | all exits | camera,3,7,7,4,0,1,7,1.290
+final model | all exits | camera,6,7,6,2,0,1,7,1.290
+final model | all exits | camera,7,5,0,7,0,1,9,1.378
+final model | all exits | camera,7,3,0,2,0,1,12,1.410
+final model | all exits | camera,2,0,4,7,0,1,9,1.378
+final model | all exits | camera,0,7,2,2,0,1,7,1.290
+final model | all exits | camera,7,4,3,2,1,1,8,1.229
+final model | all exits | camera,6,7,3,1,0,1,9,1.378
+final model | all exits | camera,2,0,7,6,0,1,11,1.467
+final model | all exits | camera,7,3,2,3,0,1,9,1.278
+final model | all exits | camera,0,0,4,4,0,1,8,1.334
+final model | all exits | camera,0,3,4,5,1,0,48,-1.087
+final model | all exits | camera,7,6,2,0,0,1,11,1.467
+final model | all exits | camera,0,3,3,7,1,0,48,-0.941
+final model | all exits | camera,1,0,7,3,1,1,9,1.378
+final model | all exits | camera,7,7,4,1,0,1,9,1.378
+final model | all exits | camera,0,6,5,6,0,1,7,1.290
+final model | all exits | camera,0,6,6,0,0,1,12,1.513
+final model | all exits | camera,0,5,1,0,0,1,10,1.322
+final model | all exits | camera,6,0,3,7,0,1,10,1.422
+final model | all exits | camera,7,5,2,1,0,1,11,1.360
+final model | all exits | camera,0,1,5,6,0,1,12,1.411
+final model | all exits | camera,5,7,2,0,0,1,10,1.422
+final model | all exits | camera,5,0,7,6,1,1,8,1.334
+final model | all exits | camera,7,2,5,6,0,1,6,1.247
+final model | all exits | camera,4,7,0,5,0,1,6,1.247
+final model | all exits | camera,6,0,3,7,0,1,10,1.422
+final model | all exits | camera,0,7,0,3,0,1,8,1.334
+final model | all exits | camera,7,3,1,3,0,1,10,1.321
+final model | all exits | camera,7,6,2,2,0,1,9,1.378
+final model | all exits | camera,0,1,5,7,0,1,11,1.467
+final model | all exits | camera,7,2,2,3,0,1,10,1.322
+final model | all exits | camera,3,7,4,2,0,1,6,1.247
+final model | all exits | camera,0,0,3,7,0,1,14,1.496
+final model | all exits | camera,4,7,0,1,0,1,10,1.422
+final model | all exits | camera,2,7,2,0,0,1,9,1.378
+final model | all exits | camera,1,7,2,2,0,1,6,1.247
+final model | all exits | camera,6,0,3,5,0,1,8,1.334
+final model | all exits | camera,1,7,5,3,0,1,8,1.334
+final model | all exits | camera,7,0,3,7,1,1,11,1.467
+final model | all exits | camera,7,3,0,6,0,1,10,1.422
+final model | all exits | camera,3,0,3,7,1,1,9,1.378
+final model | all exits | camera,1,7,7,1,0,1,12,1.513
+final model | all exits | camera,0,0,6,0,0,1,6,1.247
+final model | all exits | camera,2,0,0,7,0,1,9,1.378
+final model | all exits | camera,7,2,4,6,0,1,7,1.290
+final model | all exits | camera,0,6,1,3,0,1,6,1.247
+final model | all exits | camera,4,0,1,6,0,1,9,1.378
+final model | all exits | camera,6,0,3,5,0,1,8,1.334
+final model | all exits | camera,0,3,0,6,1,0,48,-1.041
+final model | all exits | camera,1,7,3,0,0,1,9,1.378
+final model | all exits | camera,2,7,6,2,0,1,9,1.378
+final model | all exits | camera,4,0,1,7,0,1,10,1.422
+final model | all exits | camera,7,4,1,7,1,1,9,1.378
+final model | all exits | camera,7,5,3,0,0,1,9,1.378
+final model | all exits | camera,7,1,1,6,0,1,11,1.467
+final model | all exits | camera,5,7,2,0,0,1,10,1.422
+final model | all exits | camera,6,0,6,6,0,1,8,1.334
+final model | all exits | camera,0,6,4,3,0,1,7,1.290
+final model | all exits | camera,0,5,6,1,0,1,10,1.422
+final model | all exits | camera,4,7,2,2,0,1,7,1.290
+final model | all exits | camera,7,5,2,1,0,1,9,1.378
+final model | all exits | camera,0,7,5,4,0,1,8,1.334
+final model | all exits | camera,7,7,0,6,0,1,8,1.334
+final model | all exits | camera,7,1,2,0,0,1,6,1.247
+final model | all exits | camera,7,5,3,7,0,1,6,1.247
+final model | all exits | camera,2,7,6,0,0,1,11,1.467
+final model | all exits | camera,1,0,5,6,1,1,10,1.422
+final model | all exits | camera,7,2,3,2,0,1,6,1.247
+final model | all exits | camera,7,4,5,0,1,1,6,1.247
+final model | all exits | camera,7,6,3,0,0,1,10,1.422
+final model | all exits | camera,7,0,4,5,1,1,8,1.334
+final model | all exits | camera,2,0,5,4,0,1,7,1.290
+final model | all exits | camera,0,7,7,3,0,1,11,1.467
+final model | all exits | camera,4,0,5,5,0,1,6,1.247
+final model | all exits | camera,0,2,3,7,0,1,10,1.422
+final model | all exits | camera,2,0,5,4,0,1,7,1.290
+final model | all exits | camera,4,7,7,3,0,1,7,1.290
+final model | all exits | camera,2,0,7,6,0,1,11,1.467
+final model | all exits | camera,4,0,7,6,0,1,9,1.378
+final model | all exits | camera,2,0,6,3,0,1,7,1.290
+final model | all exits | camera,6,0,3,5,0,1,8,1.334
+final model | all exits | camera,7,1,6,7,0,1,7,1.290
+final model | all exits | camera,7,5,4,4,0,1,6,1.247
+final model | all exits | camera,0,1,1,5,0,1,7,1.290
+final model | all exits | camera,0,1,5,0,0,1,6,1.247
+final model | all exits | camera,4,7,0,5,0,1,6,1.247
+final model | all exits | camera,6,7,6,3,0,1,6,1.247
+final model | all exits | camera,6,0,1,3,0,1,8,1.334
+final model | all exits | camera,0,2,6,6,0,1,10,1.422
+final model | all exits | camera,1,7,0,3,0,1,7,1.290
+final model | all exits | camera,6,7,0,3,0,1,11,1.393
+final model | all exits | camera,1,0,6,2,1,1,7,1.290
+final model | all exits | camera,3,0,7,5,1,1,9,1.378
+final model | all exits | camera,0,5,4,1,0,1,8,1.334
+final model | all exits | camera,0,6,7,2,0,1,11,1.467
+final model | all exits | camera,0,6,7,5,0,1,10,1.422
+final model | all exits | camera,6,0,1,3,0,1,8,1.334
+final model | all exits | camera,0,0,2,4,0,1,6,1.247
+final model | all exits | camera,7,6,1,7,0,1,7,1.290
+final model | all exits | camera,5,0,1,7,1,1,11,1.467
+final model | all exits | camera,7,3,1,6,0,1,9,1.378
+final model | all exits | camera,5,7,4,0,0,1,8,1.334
+final model | all exits | camera,7,0,0,7,1,1,14,1.605
+final model | all exits | camera,7,2,3,1,0,1,7,1.290
+final model | all exits | camera,1,0,1,6,1,1,8,1.334
+final model | all exits | camera,7,4,3,5,1,1,7,1.290
+final model | all exits | camera,6,0,1,3,0,1,8,1.334
+final model | all exits | camera,0,0,5,4,0,1,9,1.378
+final model | all exits | camera,1,0,1,5,1,1,7,1.290
+final model | all exits | camera,4,7,0,0,0,1,11,1.467
+final model | all exits | camera,7,1,4,2,0,1,6,1.247
+final model | all exits | camera,7,5,0,6,0,1,10,1.422
+final model | all exits | camera,1,0,5,7,1,1,11,1.467
+final model | all exits | camera,4,7,3,0,0,1,8,1.334
+final model | all exits | camera,7,4,2,1,1,1,14,1.283
+final model | all exits | camera,1,7,6,3,0,1,9,1.378
+final model | all exits | camera,0,5,7,7,0,1,9,1.378
+final model | all exits | camera,0,7,3,0,0,1,10,1.422
+final model | all exits | camera,4,0,5,5,0,1,6,1.247
+final model | all exits | camera,7,6,1,0,0,1,12,1.513
+final model | all exits | camera,0,2,5,3,0,1,10,1.318
+final model | all exits | camera,0,1,0,7,0,1,11,1.396
+final model | all exits | camera,0,0,4,6,0,1,10,1.422
+final model | all exits | camera,1,7,4,1,0,1,9,1.378
+final model | all exits | camera,0,7,4,5,0,1,6,1.247
+final model | all exits | camera,7,5,4,0,0,1,10,1.315
+final model | all exits | camera,7,3,2,3,0,1,9,1.278
+final model | all exits | camera,4,7,0,3,0,1,8,1.334
+final model | all exits | camera,4,0,2,5,0,1,7,1.290
+final model | all exits | camera,1,7,1,0,0,1,11,1.367
+final model | all exits | camera,6,0,1,7,0,1,12,1.513
+final model | all exits | camera,7,2,4,5,0,1,6,1.247
+final model | all exits | camera,7,3,0,3,0,1,11,1.365
+final model | all exits | camera,5,7,4,0,0,1,8,1.334
+final model | all exits | camera,7,7,4,3,0,1,7,1.290
+final model | all exits | camera,0,0,6,0,0,1,6,1.247
+final model | all exits | camera,0,5,4,0,0,1,9,1.378
+final model | all exits | camera,7,5,1,3,0,1,10,1.422
+final model | all exits | camera,6,0,6,6,0,1,8,1.334
+final model | all exits | camera,0,6,7,2,0,1,11,1.467
+final model | all exits | camera,1,0,1,6,1,1,8,1.334
+final model | all exits | camera,0,6,4,1,0,1,9,1.378
+final model | all exits | camera,5,0,3,5,1,1,7,1.290
+final model | all exits | camera,7,4,2,5,1,1,8,1.334
+final model | all exits | camera,3,7,0,3,0,1,9,1.378
+final model | all exits | camera,7,2,0,2,0,1,13,1.456
+final model | all exits | camera,1,7,7,2,0,1,11,1.467
+final model | all exits | camera,5,7,5,0,0,1,9,1.378
+final model | all exits | camera,7,0,1,3,1,1,9,1.378
+final model | all exits | camera,0,7,7,2,0,1,12,1.513
+final model | all exits | camera,7,3,2,5,0,1,7,1.290
+final model | all exits | camera,3,0,4,7,1,1,8,1.334
+final model | all exits | camera,3,7,2,1,0,1,9,1.378
+final model | all exits | camera,6,0,2,7,0,1,11,1.467
+final model | all exits | camera,6,0,1,3,0,1,8,1.334
+final model | all exits | camera,4,0,5,5,0,1,6,1.247
+final model | all exits | camera,0,7,4,4,0,1,7,1.290
+final model | all exits | camera,7,3,2,1,0,1,9,1.276
+final model | all exits | camera,0,5,4,7,0,1,6,1.247
+final model | all exits | camera,0,7,3,2,0,1,8,1.334
+final model | all exits | camera,1,0,7,7,1,1,13,1.559
+final model | all exits | camera,0,6,7,3,0,1,10,1.422
+final model | all exits | camera,7,6,6,0,0,1,7,1.290
+final model | all exits | camera,1,7,3,2,0,1,7,1.290
+final model | all exits | camera,6,7,0,6,0,1,7,1.290
+final model | all exits | camera,5,0,2,4,1,1,7,1.290
+final model | all exits | camera,5,7,2,0,0,1,10,1.422
+final model | all exits | camera,0,0,6,0,0,1,6,1.247
+final model | all exits | camera,7,0,4,5,1,1,8,1.334
+final model | all exits | camera,7,4,1,5,1,1,9,1.378
+final model | all exits | camera,7,3,1,5,0,1,8,1.334
+final model | all exits | camera,7,6,0,6,0,1,9,1.378
+final model | HELD-OUT exits | camera,0,3,7,3,1,0,48,-0.939
+final model | HELD-OUT exits | camera,3,0,6,7,1,1,10,1.422
+final model | HELD-OUT exits | camera,0,3,5,4,1,0,48,-0.986
+final model | HELD-OUT exits | camera,7,4,0,3,1,1,12,1.411
+final model | HELD-OUT exits | camera,5,0,2,4,1,1,7,1.290
+final model | HELD-OUT exits | camera,5,0,5,4,1,1,8,1.232
+final model | HELD-OUT exits | camera,3,0,2,5,1,1,8,1.229
+final model | HELD-OUT exits | camera,3,0,3,5,1,1,7,1.290
+final model | HELD-OUT exits | camera,5,0,4,6,1,1,7,1.290
+final model | HELD-OUT exits | camera,3,0,5,4,1,1,6,1.247
+final model | HELD-OUT exits | camera,7,0,0,5,1,1,12,1.513
+final model | HELD-OUT exits | camera,1,0,5,4,1,1,8,1.334
+final model | HELD-OUT exits | camera,7,4,3,7,1,1,7,1.290
+final model | HELD-OUT exits | camera,7,0,5,4,1,1,18,1.136
+final model | HELD-OUT exits | camera,7,0,0,5,1,1,12,1.513
+final model | HELD-OUT exits | camera,0,3,4,6,1,0,48,-1.039
+final model | HELD-OUT exits | camera,7,0,4,4,1,1,7,1.290
+final model | HELD-OUT exits | camera,5,0,6,7,1,1,12,1.407
+final model | HELD-OUT exits | camera,0,3,5,6,1,0,48,-0.993
+final model | HELD-OUT exits | camera,7,0,4,7,1,1,10,1.422
+final model | HELD-OUT exits | camera,5,0,2,4,1,1,7,1.290
+final model | HELD-OUT exits | camera,0,3,7,3,1,0,48,-0.937
+final model | HELD-OUT exits | camera,5,0,2,5,1,1,8,1.334
+final model | HELD-OUT exits | camera,7,0,2,4,1,1,9,1.378
+final model | HELD-OUT exits | camera,3,0,7,4,1,1,8,1.334
+final model | HELD-OUT exits | camera,0,3,5,3,1,0,48,-1.044
+final model | HELD-OUT exits | camera,0,3,4,0,1,0,48,-1.041
+final model | HELD-OUT exits | camera,3,0,7,6,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,0,5,7,1,1,13,1.341
+final model | HELD-OUT exits | camera,7,4,0,7,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,4,0,2,1,1,13,1.456
+final model | HELD-OUT exits | camera,3,0,4,5,1,1,6,1.247
+final model | HELD-OUT exits | camera,1,0,2,7,1,1,12,1.406
+final model | HELD-OUT exits | camera,7,4,3,2,1,1,10,1.210
+final model | HELD-OUT exits | camera,7,0,3,5,1,1,11,1.359
+final model | HELD-OUT exits | camera,3,0,7,6,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,0,3,5,1,1,13,1.341
+final model | HELD-OUT exits | camera,0,3,4,6,1,0,48,-1.042
+final model | HELD-OUT exits | camera,0,3,4,5,1,0,48,-1.092
+final model | HELD-OUT exits | camera,7,4,2,0,1,1,9,1.378
+final model | HELD-OUT exits | camera,0,3,3,7,1,0,48,-0.938
+final model | HELD-OUT exits | camera,1,0,7,3,1,1,9,1.378
+final model | HELD-OUT exits | camera,7,4,3,0,1,1,8,1.334
+final model | HELD-OUT exits | camera,1,0,5,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,1,0,6,2,1,1,7,1.290
+final model | HELD-OUT exits | camera,1,0,1,6,1,1,8,1.334
+final model | HELD-OUT exits | camera,5,0,4,5,1,1,6,1.247
+final model | HELD-OUT exits | camera,7,4,2,1,1,1,10,1.320
+final model | HELD-OUT exits | camera,0,3,5,7,1,0,48,-0.932
+final model | HELD-OUT exits | camera,5,0,1,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,5,0,7,6,1,1,8,1.334
+final model | HELD-OUT exits | camera,7,0,6,6,1,1,9,1.272
+final model | HELD-OUT exits | camera,5,0,0,7,1,1,12,1.513
+final model | HELD-OUT exits | camera,5,0,4,5,1,1,6,1.247
+final model | HELD-OUT exits | camera,1,0,0,7,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,4,1,5,1,1,9,1.378
+final model | HELD-OUT exits | camera,7,4,2,2,1,1,7,1.290
+final model | HELD-OUT exits | camera,0,3,6,0,1,1,19,1.300
+final model | HELD-OUT exits | camera,7,0,2,7,1,1,12,1.513
+final model | HELD-OUT exits | camera,3,0,5,5,1,1,7,1.290
+final model | HELD-OUT exits | camera,0,3,4,1,1,1,16,1.171
+final model | HELD-OUT exits | camera,5,0,0,2,1,1,7,1.290
+final model | HELD-OUT exits | camera,3,0,1,6,1,1,12,1.297
+final model | HELD-OUT exits | camera,1,0,3,5,1,1,9,1.278
+final model | HELD-OUT exits | camera,5,0,4,5,1,1,6,1.247
+final model | HELD-OUT exits | camera,1,0,5,5,1,1,9,1.378
+final model | HELD-OUT exits | camera,7,0,3,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,7,4,0,7,1,1,10,1.422
+final model | HELD-OUT exits | camera,3,0,3,7,1,1,9,1.378
+final model | HELD-OUT exits | camera,1,0,7,1,1,1,7,1.290
+final model | HELD-OUT exits | camera,0,3,6,1,1,1,20,1.320
+final model | HELD-OUT exits | camera,3,0,0,6,1,1,11,1.360
+final model | HELD-OUT exits | camera,7,0,5,6,1,1,10,1.315
+final model | HELD-OUT exits | camera,1,0,1,6,1,1,10,1.315
+final model | HELD-OUT exits | camera,5,0,1,6,1,1,10,1.422
+final model | HELD-OUT exits | camera,5,0,3,7,1,1,9,1.378
+final model | HELD-OUT exits | camera,0,3,0,6,1,0,48,-1.042
+final model | HELD-OUT exits | camera,1,0,3,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,3,0,6,6,1,1,9,1.378
+final model | HELD-OUT exits | camera,5,0,1,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,7,4,1,7,1,1,9,1.378
+final model | HELD-OUT exits | camera,7,4,3,0,1,1,10,1.315
+final model | HELD-OUT exits | camera,7,0,1,6,1,1,12,1.513
+final model | HELD-OUT exits | camera,5,0,1,7,1,1,11,1.467
+final model | HELD-OUT exits | camera,5,0,6,7,1,1,12,1.407
+final model | HELD-OUT exits | camera,1,0,4,6,1,1,9,1.378
+final model | HELD-OUT exits | camera,1,0,6,2,1,1,7,1.290
+final model | HELD-OUT exits | camera,5,0,2,3,1,1,6,1.247
+final model | HELD-OUT exits | camera,7,4,2,0,1,1,9,1.378
+final model | HELD-OUT exits | camera,1,0,5,6,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,4,0,5,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,0,2,1,1,1,6,1.247
+final model | HELD-OUT exits | camera,7,4,3,5,1,1,7,1.290
+final model | HELD-OUT exits | camera,3,0,6,3,1,1,8,1.229
+final model | HELD-OUT exits | camera,1,0,5,6,1,1,10,1.422
+final model | HELD-OUT exits | camera,7,0,4,5,1,1,8,1.334
+final model | HELD-OUT exits | camera,7,4,5,0,1,1,7,1.218
+final model | HELD-OUT exits | camera,7,4,2,7,1,1,8,1.334
+final model | HELD-OUT exits | camera,7,0,4,5,1,1,10,1.315
+final model | HELD-OUT exits | camera,3,0,4,7,1,1,8,1.334
+final model | all exits | BLANK camera,0,2,7,3,0,0,48,-1.019
+final model | all exits | BLANK camera,2,0,6,7,0,0,48,-1.035
+final model | all exits | BLANK camera,0,0,5,4,0,0,48,-1.110
+final model | all exits | BLANK camera,7,4,0,3,1,0,48,-0.997
+final model | all exits | BLANK camera,4,7,2,3,0,0,48,-1.333
+final model | all exits | BLANK camera,5,7,4,1,0,0,48,-1.072
+final model | all exits | BLANK camera,2,7,2,2,0,0,48,-1.216
+final model | all exits | BLANK camera,3,0,3,5,1,0,48,-1.167
+final model | all exits | BLANK camera,4,0,4,7,0,0,48,-1.311
+final model | all exits | BLANK camera,2,0,5,5,0,0,48,-1.185
+final model | all exits | BLANK camera,7,2,0,3,0,0,48,-1.112
+final model | all exits | BLANK camera,0,6,5,0,0,0,48,-0.955
+final model | all exits | BLANK camera,7,3,3,7,0,0,48,-1.203
+final model | all exits | BLANK camera,6,7,5,0,0,0,48,-1.046
+final model | all exits | BLANK camera,7,0,0,5,1,0,48,-0.899
+final model | all exits | BLANK camera,0,5,4,2,0,0,48,-1.294
+final model | all exits | BLANK camera,7,3,2,5,0,0,48,-1.372
+final model | all exits | BLANK camera,5,7,6,2,0,1,48,0.597
+final model | all exits | BLANK camera,0,0,5,5,0,0,48,-1.000
+final model | all exits | BLANK camera,7,2,3,7,0,0,48,-1.139
+final model | all exits | BLANK camera,4,7,2,3,0,1,33,0.873
+final model | all exits | BLANK camera,0,0,7,3,0,0,48,-1.042
+final model | all exits | BLANK camera,5,0,2,5,1,0,48,-1.051
+final model | all exits | BLANK camera,6,7,2,3,0,0,48,-1.145
+final model | all exits | BLANK camera,4,0,7,4,0,0,48,-1.259
+final model | all exits | BLANK camera,0,3,5,3,1,0,48,-1.196
+final model | all exits | BLANK camera,0,5,3,0,0,0,48,-1.183
+final model | all exits | BLANK camera,3,7,7,4,0,0,48,-1.206
+final model | all exits | BLANK camera,6,7,6,2,0,1,48,0.627
+final model | all exits | BLANK camera,7,5,0,7,0,1,34,0.943
+final model | all exits | BLANK camera,7,3,0,2,0,0,48,-1.141
+final model | all exits | BLANK camera,2,0,4,7,0,0,48,-1.015
+final model | all exits | BLANK camera,0,7,2,2,0,0,48,-1.198
+final model | all exits | BLANK camera,7,4,3,2,1,0,48,-1.282
+final model | all exits | BLANK camera,6,7,3,1,0,0,48,-1.203
+final model | all exits | BLANK camera,2,0,7,6,0,0,48,-1.006
+final model | all exits | BLANK camera,7,3,2,3,0,0,48,-1.336
+final model | all exits | BLANK camera,0,0,4,4,0,0,48,-1.127
+final model | all exits | BLANK camera,0,3,4,5,1,1,44,0.746
+final model | all exits | BLANK camera,7,6,2,0,0,0,48,-1.197
+final model | all exits | BLANK camera,0,3,3,7,1,0,48,-1.073
+final model | all exits | BLANK camera,1,0,7,3,1,0,48,-1.135
+final model | all exits | BLANK camera,7,7,4,1,0,0,48,-1.061
+final model | all exits | BLANK camera,0,6,5,6,0,0,48,-1.066
+final model | all exits | BLANK camera,0,6,6,0,0,0,48,-1.005
+final model | all exits | BLANK camera,0,5,1,0,0,0,48,-1.176
+final model | all exits | BLANK camera,6,0,3,7,0,0,48,-1.084
+final model | all exits | BLANK camera,7,5,2,1,0,0,48,-1.113
+final model | all exits | BLANK camera,0,1,5,6,0,0,48,-0.874
+final model | all exits | BLANK camera,5,7,2,0,0,0,48,-1.085
+final model | all exits | BLANK camera,5,0,7,6,1,0,48,-1.173
+final model | all exits | BLANK camera,7,2,5,6,0,0,48,-1.360
+final model | all exits | BLANK camera,4,7,0,5,0,1,8,1.192
+final model | all exits | BLANK camera,6,0,3,7,0,0,48,-1.224
+final model | all exits | BLANK camera,0,7,0,3,0,0,48,-1.428
+final model | all exits | BLANK camera,7,3,1,3,0,1,17,1.214
+final model | all exits | BLANK camera,7,6,2,2,0,0,48,-1.229
+final model | all exits | BLANK camera,0,1,5,7,0,0,48,-0.941
+final model | all exits | BLANK camera,7,2,2,3,0,1,33,0.886
+final model | all exits | BLANK camera,3,7,4,2,0,0,48,-1.321
+final model | all exits | BLANK camera,0,0,3,7,0,0,48,-0.888
+final model | all exits | BLANK camera,4,7,0,1,0,0,48,-1.096
+final model | all exits | BLANK camera,2,7,2,0,0,1,22,1.144
+final model | all exits | BLANK camera,1,7,2,2,0,0,48,-1.241
+final model | all exits | BLANK camera,6,0,3,5,0,0,48,-1.124
+final model | all exits | BLANK camera,1,7,5,3,0,0,48,-1.164
+final model | all exits | BLANK camera,7,0,3,7,1,0,48,-1.056
+final model | all exits | BLANK camera,7,3,0,6,0,0,48,-1.204
+final model | all exits | BLANK camera,3,0,3,7,1,0,48,-1.226
+final model | all exits | BLANK camera,1,7,7,1,0,0,48,-0.942
+final model | all exits | BLANK camera,0,0,6,0,0,0,48,-1.213
+final model | all exits | BLANK camera,2,0,0,7,0,0,48,-1.141
+final model | all exits | BLANK camera,7,2,4,6,0,1,38,0.877
+final model | all exits | BLANK camera,0,6,1,3,0,0,48,-1.369
+final model | all exits | BLANK camera,4,0,1,6,0,0,48,-1.202
+final model | all exits | BLANK camera,6,0,3,5,0,0,48,-1.204
+final model | all exits | BLANK camera,0,3,0,6,1,0,48,-1.151
+final model | all exits | BLANK camera,1,7,3,0,0,0,48,-1.163
+final model | all exits | BLANK camera,2,7,6,2,0,0,48,-1.161
+final model | all exits | BLANK camera,4,0,1,7,0,0,48,-0.958
+final model | all exits | BLANK camera,7,4,1,7,1,0,48,-1.122
+final model | all exits | BLANK camera,7,5,3,0,0,0,48,-1.140
+final model | all exits | BLANK camera,7,1,1,6,0,0,48,-1.122
+final model | all exits | BLANK camera,5,7,2,0,0,0,48,-1.073
+final model | all exits | BLANK camera,6,0,6,6,0,0,48,-1.197
+final model | all exits | BLANK camera,0,6,4,3,0,0,48,-1.168
+final model | all exits | BLANK camera,0,5,6,1,0,0,48,-1.106
+final model | all exits | BLANK camera,4,7,2,2,0,0,48,-1.231
+final model | all exits | BLANK camera,7,5,2,1,0,0,48,-1.101
+final model | all exits | BLANK camera,0,7,5,4,0,0,48,-1.190
+final model | all exits | BLANK camera,7,7,0,6,0,1,36,0.976
+final model | all exits | BLANK camera,7,1,2,0,0,0,48,-1.201
+final model | all exits | BLANK camera,7,5,3,7,0,1,22,1.033
+final model | all exits | BLANK camera,2,7,6,0,0,0,48,-1.017
+final model | all exits | BLANK camera,1,0,5,6,1,0,48,-1.014
+final model | all exits | BLANK camera,7,2,3,2,0,1,48,0.749
+final model | all exits | BLANK camera,7,4,5,0,1,1,36,0.805
+final model | all exits | BLANK camera,7,6,3,0,0,1,44,0.929
+final model | all exits | BLANK camera,7,0,4,5,1,0,48,-1.216
+final model | all exits | BLANK camera,2,0,5,4,0,0,48,-1.280
+final model | all exits | BLANK camera,0,7,7,3,0,0,48,-1.192
+final model | all exits | BLANK camera,4,0,5,5,0,0,48,-1.218
+final model | all exits | BLANK camera,0,2,3,7,0,0,48,-1.155
+final model | all exits | BLANK camera,2,0,5,4,0,0,48,-1.251
+final model | all exits | BLANK camera,4,7,7,3,0,0,48,-1.232
+final model | all exits | BLANK camera,2,0,7,6,0,0,48,-0.997
+final model | all exits | BLANK camera,4,0,7,6,0,0,48,-1.212
+final model | all exits | BLANK camera,2,0,6,3,0,0,48,-1.393
+final model | all exits | BLANK camera,6,0,3,5,0,0,48,-1.221
+final model | all exits | BLANK camera,7,1,6,7,0,0,48,-1.427
+final model | all exits | BLANK camera,7,5,4,4,0,0,48,-1.343
+final model | all exits | BLANK camera,0,1,1,5,0,0,48,-1.136
+final model | all exits | BLANK camera,0,1,5,0,0,0,48,-1.317
+final model | all exits | BLANK camera,4,7,0,5,0,0,48,-1.304
+final model | all exits | BLANK camera,6,7,6,3,0,1,33,0.673
+final model | all exits | BLANK camera,6,0,1,3,0,0,48,-1.247
+final model | all exits | BLANK camera,0,2,6,6,0,0,48,-1.056
+final model | all exits | BLANK camera,1,7,0,3,0,0,48,-1.400
+final model | all exits | BLANK camera,6,7,0,3,0,0,48,-1.107
+final model | all exits | BLANK camera,1,0,6,2,1,0,48,-1.090
+final model | all exits | BLANK camera,3,0,7,5,1,0,48,-1.523
+final model | all exits | BLANK camera,0,5,4,1,0,0,48,-1.197
+final model | all exits | BLANK camera,0,6,7,2,0,0,48,-1.007
+final model | all exits | BLANK camera,0,6,7,5,0,0,48,-1.004
+final model | all exits | BLANK camera,6,0,1,3,0,1,40,0.777
+final model | all exits | BLANK camera,0,0,2,4,0,0,48,-1.118
+final model | all exits | BLANK camera,7,6,1,7,0,0,48,-1.264
+final model | all exits | BLANK camera,5,0,1,7,1,0,48,-1.045
+final model | all exits | BLANK camera,7,3,1,6,0,0,48,-1.111
+final model | all exits | BLANK camera,5,7,4,0,0,0,48,-1.156
+final model | all exits | BLANK camera,7,0,0,7,1,0,48,-0.833
+final model | all exits | BLANK camera,7,2,3,1,0,1,14,1.136
+final model | all exits | BLANK camera,1,0,1,6,1,0,48,-1.285
+final model | all exits | BLANK camera,7,4,3,5,1,0,48,-1.468
+final model | all exits | BLANK camera,6,0,1,3,0,1,43,0.803
+final model | all exits | BLANK camera,0,0,5,4,0,0,48,-0.993
+final model | all exits | BLANK camera,1,0,1,5,1,0,48,-1.210
+final model | all exits | BLANK camera,4,7,0,0,0,0,48,-1.172
+final model | all exits | BLANK camera,7,1,4,2,0,0,48,-1.160
+final model | all exits | BLANK camera,7,5,0,6,0,0,48,-1.084
+final model | all exits | BLANK camera,1,0,5,7,1,0,48,-0.916
+final model | all exits | BLANK camera,4,7,3,0,0,0,48,-1.135
+final model | all exits | BLANK camera,7,4,2,1,1,0,48,-1.255
+final model | all exits | BLANK camera,1,7,6,3,0,0,48,-1.141
+final model | all exits | BLANK camera,0,5,7,7,0,0,48,-1.364
+final model | all exits | BLANK camera,0,7,3,0,0,0,48,-0.945
+final model | all exits | BLANK camera,4,0,5,5,0,0,48,-1.241
+final model | all exits | BLANK camera,7,6,1,0,0,0,48,-1.023
+final model | all exits | BLANK camera,0,2,5,3,0,0,48,-1.145
+final model | all exits | BLANK camera,0,1,0,7,0,0,48,-1.138
+final model | all exits | BLANK camera,0,0,4,6,0,0,48,-0.943
+final model | all exits | BLANK camera,1,7,4,1,0,0,48,-1.164
+final model | all exits | BLANK camera,0,7,4,5,0,0,48,-1.355
+final model | all exits | BLANK camera,7,5,4,0,0,0,48,-1.145
+final model | all exits | BLANK camera,7,3,2,3,0,0,48,-1.209
+final model | all exits | BLANK camera,4,7,0,3,0,0,48,-1.229
+final model | all exits | BLANK camera,4,0,2,5,0,0,48,-1.217
+final model | all exits | BLANK camera,1,7,1,0,0,0,48,-1.265
+final model | all exits | BLANK camera,6,0,1,7,0,0,48,-0.926
+final model | all exits | BLANK camera,7,2,4,5,0,0,48,-1.345
+final model | all exits | BLANK camera,7,3,0,3,0,0,48,-1.150
+final model | all exits | BLANK camera,5,7,4,0,0,0,48,-1.230
+final model | all exits | BLANK camera,7,7,4,3,0,0,48,-1.293
+final model | all exits | BLANK camera,0,0,6,0,0,1,27,0.943
+final model | all exits | BLANK camera,0,5,4,0,0,0,48,-1.066
+final model | all exits | BLANK camera,7,5,1,3,0,0,48,-0.999
+final model | all exits | BLANK camera,6,0,6,6,0,1,25,1.055
+final model | all exits | BLANK camera,0,6,7,2,0,0,48,-0.978
+final model | all exits | BLANK camera,1,0,1,6,1,0,48,-1.192
+final model | all exits | BLANK camera,0,6,4,1,0,0,48,-1.002
+final model | all exits | BLANK camera,5,0,3,5,1,0,48,-1.350
+final model | all exits | BLANK camera,7,4,2,5,1,0,48,-1.157
+final model | all exits | BLANK camera,3,7,0,3,0,0,48,-1.247
+final model | all exits | BLANK camera,7,2,0,2,0,1,31,1.138
+final model | all exits | BLANK camera,1,7,7,2,0,0,48,-0.907
+final model | all exits | BLANK camera,5,7,5,0,0,0,48,-1.189
+final model | all exits | BLANK camera,7,0,1,3,1,0,48,-1.273
+final model | all exits | BLANK camera,0,7,7,2,0,0,48,-0.807
+final model | all exits | BLANK camera,7,3,2,5,0,0,48,-1.225
+final model | all exits | BLANK camera,3,0,4,7,1,0,48,-1.122
+final model | all exits | BLANK camera,3,7,2,1,0,0,48,-1.103
+final model | all exits | BLANK camera,6,0,2,7,0,1,43,0.968
+final model | all exits | BLANK camera,6,0,1,3,0,0,48,-1.171
+final model | all exits | BLANK camera,4,0,5,5,0,0,48,-1.182
+final model | all exits | BLANK camera,0,7,4,4,0,0,48,-1.348
+final model | all exits | BLANK camera,7,3,2,1,0,0,48,-1.158
+final model | all exits | BLANK camera,0,5,4,7,0,0,48,-1.465
+final model | all exits | BLANK camera,0,7,3,2,0,0,48,-1.159
+final model | all exits | BLANK camera,1,0,7,7,1,0,48,-1.015
+final model | all exits | BLANK camera,0,6,7,3,0,0,48,-0.991
+final model | all exits | BLANK camera,7,6,6,0,0,0,48,-1.222
+final model | all exits | BLANK camera,1,7,3,2,0,0,48,-1.201
+final model | all exits | BLANK camera,6,7,0,6,0,0,48,-1.387
+final model | all exits | BLANK camera,5,0,2,4,1,0,48,-1.244
+final model | all exits | BLANK camera,5,7,2,0,0,1,44,1.030
+final model | all exits | BLANK camera,0,0,6,0,0,0,48,-1.283
+final model | all exits | BLANK camera,7,0,4,5,1,0,48,-1.120
+final model | all exits | BLANK camera,7,4,1,5,1,0,48,-1.220
+final model | all exits | BLANK camera,7,3,1,5,0,0,48,-1.216
+final model | all exits | BLANK camera,7,6,0,6,0,0,48,-1.250

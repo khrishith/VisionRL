@@ -1,0 +1,12 @@
+PASS RoomAgent in Play mode, no trainer attached
+PASS world is in random-exit mode with a 48-step limit
+PASS 400 resets: pad, door and robot always match the logical state; 27/27 exits and all four sides used (N106 S132 W64 E98)
+PASS robot drove the 11-step route to the exit 7,0: episode ended, reward 1.040
+PASS after the exit, a new valid episode starts
+PASS obstacle at (2,6) blocks the robot, reward -0.028 < 0
+PASS east wall blocks the robot, reward -0.027 < 0
+PASS 60 random-walk episodes in the real agent (2810 steps): 0 positive rewards without progress; 53 timeouts, all with negative total return
+PASS 8 exits rendered, covering all four sides
+PASS green exit visible in every frame (fewest green pixels 104)
+PASS robot visible in every frame (fewest blue pixels 13)
+PASS the green blob in the 84x84 frame is centred within 0.33 cells of the logical exit in every frame

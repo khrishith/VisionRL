@@ -1,0 +1,8 @@
+{
+  "Assets/VisionRL/Scripts/GridWorld.cs": "66d6d3b0d8089ee6aab4edb12f48f00a9459a61f052108ca116bcc252516a25c",
+  "Assets/VisionRL/Scripts/GridAgent.cs": "f3a231ce0630f4472eb3744da88f4a1afe6bc79de71ee7fd74d8c69e0913cbac",
+  "Assets/VisionRL/Editor/VisionRLBuilder.cs": "0e907ae2763379d929c6501868b37660bbb98b033b8f2914a644f1fb7a3a43c5",
+  "Assets/VisionRL/Scenes/GridWorld.unity": "c90f5d8f660e92a484ddb821ecbc79c2ad8af0f2de510f267a6c5cb0673e29b8",
+  "Training/ppo.yaml": "f25df5053e0c9b50b55d8e7b2eba0e33e909540b89d6608b4804b3af6bbb0551",
+  "Training/smoke.yaml": "ab4153df4b92643949690f13da59b1cbd3b4e84b114510899c30c908683e6626"
+}

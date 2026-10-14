@@ -1,0 +1,26 @@
+PASS RoomAgent exists in Play mode
+PASS no trainer connection
+PASS idle simulation steps do nothing
+PASS forward moves one cell (+Z) and the robot follows
+PASS right moves +X
+PASS backward moves -Z
+PASS left moves -X
+PASS south wall blocks the robot
+PASS west wall blocks; bump costs step + wall penalty (-0.03 plus tiny gamma shaping)
+PASS north wall (beside the exit) blocks the robot
+PASS obstacle at (2,6) blocks the robot
+PASS obstacle at (3,3) blocks the robot
+PASS entering the goal zone ends the episode
+PASS goal reward is 1.04
+PASS after the goal the robot is reset to a valid non-goal cell
+PASS robot transform matches the reset cell
+PASS second goal cell (6,7) also ends the episode (via 7,7 -> 6,7)
+PASS robot drives the 12-step detour route around obstacles to the exit
+PASS timeout: still running at action 127
+PASS timeout: action 128 ends and resets the episode
+PASS 100 episode resets: valid cells, varied (45 distinct)
+PASS obstacle tops clearly brighter than every open floor tile at 84x84 (dimmest obstacle 0.588 vs brightest floor 0.255)
+PASS camera produces 84x84 RGB observations
+PASS robot visible in every sampled frame (fewest blue pixels: 14)
+PASS green goal visible in every sampled frame (fewest green pixels: 216)
+PASS robot lens still faces +Z (Forward)
