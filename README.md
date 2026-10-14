@@ -1,99 +1,138 @@
-# VisionRL: Camera-Based Visual Navigation with Deep Reinforcement Learning in Unity
+<div align="center">
 
-A Unity 6.6 / ML-Agents project in which a robot learns, with **PPO**, to reach a randomly placed exit in an 8 × 8 room using **only one 84 × 84 RGB camera frame**. There are no vector observations, no ray sensors and no coordinates: the policy has to find the exit in the image.
+# VisionRL
 
-The trained policy is exported to **ONNX** and runs inside Unity's own inference engine (Burst CPU), with no Python needed at run time.
+**A robot that finds the exit using only its camera**
 
-## Quick start: just watch the trained robot (no training needed)
+Camera-based navigation in Unity, trained with reinforcement learning (PPO)
 
-The model is **already trained** and included in this repo, so you do not need Python or any training to see it work.
+<br/>
 
-1. Install **Unity Hub** and the editor version **6000.6.5f1** (Unity 6.6) with macOS or Windows support.
-2. Clone this repo (`git clone https://github.com/khrishith/VisionRL.git`) and add the folder in Unity Hub (**Add > Add project from disk**).
-3. Open it with 6000.6.5f1. The first import takes a few minutes while Unity rebuilds its caches; some warnings are normal.
-4. Open `Assets/VisionRL/Scenes/EscapeRoomRandomExit_Demo.unity` and press **Play**.
-5. The robot drives itself to the green exit (no keyboard needed), then respawns with a new random exit and start. Watch the Game view; the step counter and reward are shown at the top left.
+<img src="https://img.shields.io/badge/Unity-6000.6.5f1-000000?style=for-the-badge&logo=unity&logoColor=white" />
+<img src="https://img.shields.io/badge/ML--Agents-4.0.0-00A67E?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" />
 
-Use `EscapeRoomRandomExit_Demo.unity` to watch (it runs at about 5 moves per second). `EscapeRoomRandomExit.unity` is the same scene at full speed (50 moves per second), used for training and testing.
+<br/><br/>
 
-## Results
+[Watch the robot](#watch-the-trained-robot) &nbsp;|&nbsp;
+[How it works](#how-it-works) &nbsp;|&nbsp;
+[Results](#results) &nbsp;|&nbsp;
+[Train it yourself](#train-it-yourself) &nbsp;|&nbsp;
+[Project structure](#project-structure)
 
-Evaluation on the same sequence of 200 episodes (reset seed 9001, all 27 exits, sampled actions). Intervals are 95% Wilson score intervals.
+</div>
 
-| Policy | Success | 95% CI | Timeouts | Mean length |
-|---|---|---|---|---|
-| Uniform random | 11/200 (5.5%) | 3.1–9.6% | 94.5% | 47.1 |
-| Best blind policy (ignores the image) | 33/200 (16.5%) | 12.0–22.3% | 83.5% | 43.7 |
-| 50k-step checkpoint, camera | 145/200 (72.5%) | 65.9–78.2% | 27.5% | 30.5 |
-| 50k-step checkpoint, blank camera | 15/200 (7.5%) | 4.6–12.0% | 92.5% | 47.2 |
-| **Final model, camera** | **196/200 (98.0%)** | **95.0–99.2%** | 2.0% | 9.6 |
-| Final model, blank camera | 22/200 (11.0%) | 7.4–16.1% | 89.0% | 46.7 |
+<br/>
 
-Run through **Unity's inference engine** (batch Play Mode, no Python trainer):
+---
 
-| Condition | Episodes | Success |
-|---|---|---|
-| All exits, camera | 200 | 196 (98.0%) |
-| Held-out exits (never seen in training), camera | 100 | 88 (88.0%) |
-| All exits, camera blanked | 200 | 24 (12.0%) |
+## About
 
-Blanking the camera drops success from 98% to about 11–12%, the level of image-blind policies, which supports that the policy relies on the image. One held-out exit, `(0,3)`, was not solved reliably (3 of 15).
+This project is a small room in Unity with a robot, twelve obstacles and a green exit. The robot has to reach the exit, but the only thing it can see is a single 84 x 84 camera image. It is not given any coordinates or sensor readings.
+
+The robot is trained with PPO using Unity ML-Agents. The exit moves to a different spot every episode, so the robot can't memorize a path. It has to find the exit in the image each time.
+
+The trained model is already included in the repo, so you can watch it run without training anything.
+
+<br/>
+
+## Watch the trained robot
+
+You need Unity Hub with editor version **6000.6.5f1** (the same version the project was made in).
+
+**1.** Clone the repo
+
+```bash
+git clone https://github.com/khrishith/VisionRL.git
+```
+
+**2.** In Unity Hub, click Add, then "Add project from disk", and pick the `VisionRL` folder.
+
+**3.** Open the project with 6000.6.5f1. The first time takes a few minutes while Unity imports everything.
+
+**4.** Open the scene `Assets/VisionRL/Scenes/EscapeRoomRandomExit_Demo.unity`
+
+**5.** Press Play
+
+The robot goes to the green exit on its own, then restarts with a new exit and a new start position. You don't need to press anything.
+
+| Scene | What it is |
+|:--|:--|
+| `EscapeRoomRandomExit_Demo.unity` | **Open this one to watch.** It runs at a slower speed. |
+| `EscapeRoomRandomExit.unity` | The same scene at full speed, used for testing and training. |
+| `EscapeRoom.unity` | An earlier version where the exit never moves. |
+| `GridWorld.unity` | The first 7 x 7 test grid. |
+
+<br/>
 
 ## How it works
 
-- **Environment:** 8 × 8 grid, four solid walls, 12 static obstacles, a blue low-poly robot and a green exit on a border cell. Exit and start are randomized every episode (27 possible exits; 21 used for training, 6 held out).
-- **Observation:** one 84 × 84 RGB frame from a fixed top-down orthographic camera.
-- **Actions:** 4 discrete moves (forward, backward, left, right), one cell per action. Blocked moves cost a step.
-- **Reward:** −0.01 per action, −0.02 extra for a blocked move, +1 for reaching the exit, −1 on timeout (48 actions), plus potential-based shaping on shortest-path distance (scale 0.05, γ = 0.99). The reward was audited so that wandering or back-and-forth loops never pay.
-- **Training:** Unity ML-Agents PPO (`Training/ppo-random-exit.yaml`), 200,000 steps, seed 42, CPU.
-
-## Repository layout
-
 ```
-Assets/VisionRL/
-  Scripts/    RoomWorld.cs, RoomAgent.cs (environment + agent), GridWorld.cs, GridAgent.cs (Stage 1 baseline)
-  Editor/     scene builders, automated checks and the Unity runtime validator
-  Scenes/     GridWorld.unity            Stage 1 baseline (7x7 grid)
-              EscapeRoom.unity           fixed-exit room
-              EscapeRoomRandomExit.unity final randomized-exit room, final model assigned (full speed)
-              EscapeRoomRandomExit_Demo.unity same scene at a watchable speed: open this one to view
-  Models/     VisionRL_random_exit_02.onnx   final trained model
-              VisionRL_escape_train_01.onnx  earlier fixed-exit model
-  Prefabs/    RobotVisual.prefab
-Packages/     Unity ML-Agents 4.0.0 (embedded, with a one-line Unity 6.6 compatibility patch)
-Training/     PPO configs, evaluate.py, requirements.txt
-Reports/      test reports, evaluation JSON, figures
-Docs/         SETUP.md, and Docs/Report/ (IEEE-style paper: LaTeX and Word sources)
+   camera image          neural network           one move              reward
+  ┌────────────┐        ┌───────────────┐       ┌───────────┐       ┌─────────────┐
+  │  84 x 84   │ ─────▶ │    decides    │ ────▶ │  forward  │ ────▶ │  PPO learns │
+  │    RGB     │        │   the move    │       │  back     │       │  from it    │
+  └────────────┘        └───────────────┘       │  left     │       └─────────────┘
+                                                │  right    │
+                                                └───────────┘
 ```
 
-Not included in the repo (kept local because of size): `Library/`, `Builds/`, `Backups/`, `results/` (training logs and checkpoints), and the Python environment.
+The robot gets one top-down camera image each step and chooses one of four moves: forward, backward, left or right. Each move takes it one cell. Walls and obstacles block it.
 
-## Requirements
+**Reward.** A small penalty for every move, a bigger penalty for walking into something, and +1 for reaching the exit. There is also a small bonus for getting closer to the exit, which helps it learn faster. An episode ends when the robot reaches the exit or after 48 moves.
 
-- **Unity 6.6 (6000.6.5f1)** with the macOS build module. Developed and tested on a MacBook Air (Apple M3), macOS.
-- **Python 3.10.12** for training and evaluation (see "Training" below).
-- The ML-Agents Unity package is already embedded in `Packages/com.unity.ml-agents`.
+**Exits.** There are 27 possible exit positions on the edge of the room. We trained on 21 of them and kept 6 back, to see if the robot could handle exits it had never seen.
 
-## Run the trained robot at full speed (no Python needed)
+<br/>
 
-1. Open the project folder in Unity Hub with editor version **6000.6.5f1**. The first import takes a few minutes.
-2. Open `Assets/VisionRL/Scenes/EscapeRoomRandomExit.unity` (or the `_Demo` scene for a watchable speed).
-3. Select `Blue Agent` and check its Behavior Parameters: model `VisionRL_random_exit_02`, Default behavior, Burst device, Deterministic Inference **off**.
-4. Press **Play**. The robot navigates to the exit by itself and respawns with a new exit and start after each escape.
-5. To slow it down for viewing, set **Decision Period** on the `Grid Decision Requester` to 10 (set it back to 1 for training).
+## Results
 
-## Automated checks
+We ran each policy on the same 200 episodes.
 
-In the Unity menu bar:
+| Policy | Reached the exit | Average steps |
+|:--|--:|--:|
+| Random moves | 5.5% | 47.1 |
+| Best policy that ignores the image | 16.5% | 43.7 |
+| **Our model** | **98.0%** (196 of 200) | **9.6** |
+| Our model with the camera blanked | 11.0% | 46.7 |
 
-- `VisionRL > Run Stage 1 Play Mode Checks` (7×7 baseline)
-- `VisionRL > Escape Room > Run Checks`
-- `VisionRL > Random Exit > Run Checks` (mechanics, reward audit, exit randomization, camera frames)
-- `VisionRL > Random Exit > Run Unity Runtime Validation` (runs the assigned model inside Unity)
+With the camera on, the robot reaches the exit about 98% of the time. When we blank the camera it drops to 11%, which is close to what a policy that ignores the image gets. So the robot really is using what it sees.
 
-## Training and evaluation (Python)
+We also ran the model inside Unity itself (not through Python). It reached the exit in 196 of 200 episodes, and in 88 of 100 episodes where the exit was one of the 6 positions it was never trained on. One of those 6 positions, at (0,3), was hard for it: it only got 3 of 15 there.
 
-Create the Python environment as described in `Docs/SETUP.md` (conda or micromamba, Python 3.10.12, `grpcio` from conda-forge, then `pip install -r Training/requirements.txt`). Then build the player with `VisionRL > Random Exit > Build macOS Player` and run:
+<br/>
+
+## Train it yourself
+
+> You only need this if you want to retrain or re-run the tests. It needs Python 3.10.12, and building the player needs a Mac.
+
+<details>
+<summary><b>1. Set up Python</b></summary>
+
+<br/>
+
+`Docs/SETUP.md` has the steps: a conda or micromamba environment with Python 3.10.12, `grpcio` from conda-forge, then
+
+```bash
+pip install -r Training/requirements.txt
+```
+
+</details>
+
+<details>
+<summary><b>2. Build the player</b></summary>
+
+<br/>
+
+In Unity, go to `VisionRL > Random Exit > Build macOS Player`. This makes `Builds/EscapeRoomRandomExit.app`.
+
+</details>
+
+<details>
+<summary><b>3. Train</b></summary>
+
+<br/>
 
 ```bash
 mlagents-learn Training/ppo-random-exit.yaml \
@@ -102,7 +141,16 @@ mlagents-learn Training/ppo-random-exit.yaml \
   --env-args -batchmode -screen-fullscreen 0 -screen-width 256 -screen-height 256
 ```
 
-Evaluate an exported model (use `--actions sampled`; the model's deterministic output is not the trained policy):
+The results, including the exported `.onnx` model, go into `results/my-run/`.
+
+The settings we used for the final run are in `Training/ppo-random-exit.yaml`: 200,000 steps, batch size 128, buffer size 2048, learning rate 3e-4 and a discount of 0.99.
+
+</details>
+
+<details>
+<summary><b>4. Test a model</b></summary>
+
+<br/>
 
 ```bash
 python Training/evaluate.py --env Builds/EscapeRoomRandomExit.app \
@@ -110,20 +158,50 @@ python Training/evaluate.py --env Builds/EscapeRoomRandomExit.app \
   --actions sampled --exit-set 0 --episodes 200 --seed 9001
 ```
 
-`--exit-set 1` uses the training exits and `--exit-set 2` the six held-out exits. `--blank-camera` runs the camera-blanking control, and `--blind-probs p0,p1,p2,p3` runs a policy that ignores the image.
+| Option | What it does |
+|:--|:--|
+| `--exit-set 2` | Tests only the 6 held-out exits |
+| `--blank-camera` | Blanks the camera |
+| `--blind-probs a,b,c,d` | Runs a policy that ignores the image |
 
-## Important: GPU Resident Drawer
+</details>
 
-`Assets/Settings/PC_RPAsset.asset` has `m_GPUResidentDrawerMode: 0` on purpose. With the drawer enabled, camera frames in built players lagged behind the true robot position and training could not learn. Keep it disabled, and verify new players by checking that the robot in the camera frame matches the real state before training (see the report, Section V).
+<br/>
 
-## Report
+## Project structure
 
-The full IEEE-style paper (method, experiments, rendering-fault analysis, limitations) is in `Docs/Report/`: the LaTeX source `overleaf/main.tex` and the Word file `VisionRL_Report.docx`.
+```
+VisionRL/
+├── Assets/VisionRL/
+│   ├── Scripts/     the environment and the agent (RoomWorld.cs, RoomAgent.cs)
+│   ├── Editor/      scene builders and automated checks
+│   ├── Scenes/      the Unity scenes
+│   ├── Models/      the trained ONNX models
+│   └── Prefabs/     the robot
+├── Packages/        Unity ML-Agents (included in the repo)
+├── Training/        PPO settings, evaluate.py, requirements.txt
+├── Reports/         test and evaluation results
+└── Docs/            setup notes and the report files
+```
 
-## Limitations
+There are also tests you can run from the Unity menu bar: `VisionRL > Random Exit > Run Checks`, and `Run Unity Runtime Validation` to run the trained model inside Unity.
 
-One training seed, one room layout (only the exit and start change), a fixed top-down camera on a small grid, and one held-out exit not solved reliably. Unity validation was done in batch Play Mode, not on a rebuilt standalone player. The conclusions apply to this controlled simulation, not to real-world robot navigation.
+<br/>
 
-## License
+## Things to know
 
-MIT. See [LICENSE](LICENSE).
+- **Keep the GPU Resident Drawer turned off.** In `Assets/Settings/PC_RPAsset.asset` it is set to `m_GPUResidentDrawerMode: 0`. When it was on, the camera image lagged behind the robot's real position and the training couldn't learn.
+- The training logs and checkpoints are not in the repo because they are big. The final trained model is included.
+- Building the player only works on macOS, but you can watch the model in the Unity Editor on any system that runs Unity 6.6.
+
+<br/>
+
+---
+
+<div align="center">
+
+Built with Unity 6.6, Unity ML-Agents 4.0.0, PyTorch 2.2.2, ONNX and Python 3.10
+
+MIT License. See [LICENSE](LICENSE).
+
+</div>
