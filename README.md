@@ -198,6 +198,13 @@ There are also tests you can run from the Unity menu bar: `VisionRL > Random Exi
 
 ---
 
+## Team Members: 
+### Anush Bundel - 2023BCS0005
+### K. Hrishith - 2023BCS0168
+### Chaitanya Raste - 2023BCS0205
+
+---
+
 <div align="center">
 
 Built with Unity 6.6, Unity ML-Agents 4.0.0, PyTorch 2.2.2, ONNX and Python 3.10
